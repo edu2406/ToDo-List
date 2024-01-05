@@ -1,0 +1,111 @@
+:root {
+    --blue-dark: #1E6F9F;
+    --blue: #4EA8DE;
+    --purple-dark: #5E60CE;
+    --purple: #8284FA;
+    --gray-100: #F2F2F2;
+    --gray-200: #d9d9d9;
+    --gray-300: #808080;
+    --gray-400: #333333;
+    --gray-500: #262626;
+    --gray-600: #1a1a1a;
+    --gray-700: #0d0d0d;
+    --danger: #e25858;
+}
+
+
+
+.todo {
+    margin: 0 auto;
+    text-align: center; 
+    height: 287px;
+    width: 736px;
+    border: none;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.created {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.created p {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.finished {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finished p {
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.content {
+    border-top: 1px solid var(--gray-400);
+    border-radius: 10px;
+    height: 244px;
+    width: 736px;
+    margin-top: 24px;
+}
+.p1 {
+    font-weight: bold;
+    color: var(--gray-300);
+}
+
+.p2 {
+    color: var(--gray-300);
+}
+
+.task {
+    border: 1px solid var(--gray-400);
+    border-radius: 10px;
+    background: var(--gray-500);
+    height: 72px;
+    width: 736px;
+    
+}
+
+.taskText {
+    text-align: left;
+    margin: 24px;
+}
+.newTaskArea {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+}
+
+.newTask {
+    background: var(--gray-500);
+    width: 638px;
+    height: 54px;
+    color: white;
+    padding: 16px;
+    line-height: 140%;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.create button{
+    font-weight: bold;
+    background: var(--blue-dark);
+    color: white;
+    width: 90px;
+    height: 52px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 7px;
+}
