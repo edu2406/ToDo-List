@@ -36,18 +36,69 @@
     margin: 10px;
     padding: 20px;
     border-radius: 7px;
+    cursor: pointer;
 }
+
+
+
+#teste {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
 
 .created {
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: space-between;
+    gap: 8px;
+}
+.created input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
 }
 
-#teste {
-    text-decoration: line-through !important;
-    opacity: 0.5 !important;
-    color: red !important;
-    background-color: red !important;
-  }
-  
+.check {
+    width: 21px;
+    height: 21px;
+    background-color: transparent;
+    border: 2px solid var(--blue);
+    border-radius: 100%;
+}
+
+.created input:checked ~.check{
+    background: var(--purple-dark);
+    border: none;
+}
+
+.created .check:after {
+    top: 5px;
+    left: 8.5px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 1.5px 1.5px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.created input:checked ~ .check:after {
+    display: block;
+}
+.created input ~.check:hover{
+    background-color: #4ea7de52;
+}
+
+.created input:checked ~.check:hover{
+    background: #8585cf;
+    border: none;
+}

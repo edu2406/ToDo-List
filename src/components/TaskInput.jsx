@@ -18,7 +18,7 @@ const TaskInput = ({addTask}) => {
     
     return (
         <form  className={styles.newTaskArea} onSubmit={handleAddTask}>
-            <input className={styles.newTask} type="text" value={task} placeholder="Adicione uma nova tarefa" onChange={handleInputValue}/>
+            <input maxLength={60}className={styles.newTask} type="text" value={task} placeholder="Adicione uma nova tarefa" onChange={handleInputValue}/>
             <button>Criar <PlusCircle size={20} className={styles.image}/></button>
         </form>
     )
