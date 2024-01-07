@@ -11,12 +11,12 @@ const TaskItem = ({ task, deleteTask, toggleCheck }) => {
                 onChange={() => toggleCheck(task.taskName)}
             />
             <label className={Styles.inLabel}></label>
-            <p className={task.checked ? 'isChecked' : ''}>{task.taskName} </p>
+            <p id={task.checked ? 'Styles.teste' : ''}>{task.taskName} </p>
         </div>
-        <Trash size={19}className={Styles.trash} onClick={() => deleteTask(task.taskName)} />
+        <div className={Styles.trashDiv}><Trash size={19}className={Styles.trash} onClick={() => deleteTask(task.taskName)} /></div>
     </li>
     )
     
 };
 
-export default TaskItem;
+export default TaskItem;    

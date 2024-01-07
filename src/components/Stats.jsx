@@ -16,7 +16,10 @@ const Stats = ({ toDoList }) => {
                 <p>
                     Concluídas
                 </p>
-                <div className={Styles.finishedNum}>{countList === 0 ? `${countList}` : `${countList}`}</div>
+                <div className={Styles.finishedNum}>
+                    {toDoList?.filter(task => task.checked === true).length} de {countList === 0 ? `${countList}` : `${countList}`}
+                </div>
+                
             </div>
         </div>
 

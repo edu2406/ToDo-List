@@ -8,12 +8,7 @@ import Styles from './App.module.css'
 import clipboard from './Clipboard.svg'
 
 function App() {
-  const [toDoLists, setToDoLists] = useState();
-
-  const todoList = {
-    description: String,
-    isChecked: boolean
-  }
+  const [toDoList, setToDoList] = useState([]);
 
   const addTask = (taskName) => {
     const newTask = { taskName, checked: false }
@@ -46,7 +41,7 @@ function App() {
           </ul>
 
           {toDoList.length === 0 ? (
-            
+
             <div>
               <img src={clipboard} alt="" />
               <p className={Styles.p1}>Você ainda não tem tarefas cadastradas</p> <p className={Styles.p2}>Crie tarefas e organize seus itens a fazer</p>
@@ -63,4 +58,4 @@ function App() {
   )
 }
 
-export default App
+export default App  
