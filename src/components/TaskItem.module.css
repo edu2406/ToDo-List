@@ -1,0 +1,24 @@
+
+
+
+.trash {
+    color: var(--gray-300);
+    cursor: pointer;
+}
+
+.itemsText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gray-500);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.created {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

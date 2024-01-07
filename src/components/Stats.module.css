@@ -1,0 +1,56 @@
+:root {
+    --blue-dark: #1E6F9F;
+    --blue: #4EA8DE;
+    --purple-dark: #5E60CE;
+    --purple: #8284FA;
+    --gray-100: #F2F2F2;
+    --gray-200: #d9d9d9;
+    --gray-300: #808080;
+    --gray-400: #333333;
+    --gray-500: #262626;
+    --gray-600: #1a1a1a;
+    --gray-700: #0d0d0d;
+    --danger: #e25858;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.created {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.created p {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.finished {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finished p {
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.createdNum {
+    background-color: var(--gray-400);
+    margin-left: 15px;
+    padding: 2px 10px;
+    border-radius: 50px;
+}
+
+.finishedNum {
+    background-color: var(--gray-400);
+    margin-left: 15px;
+    padding: 2px 10px;
+    border-radius: 50px;
+}

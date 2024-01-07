@@ -1,0 +1,42 @@
+
+
+
+.main {
+    margin: 0 auto;
+    text-align: center; 
+    height: 287px;
+    width: 736px;
+    border: none;
+}
+
+/* .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.toDoList {
+    border-top: 1px solid var(--gray-400);
+    border-radius: 10px;
+    width: 736px;
+    margin-top: 24px;
+}
+
+.listItems {
+    list-style-type: none;
+}
+
+img {
+    margin-top: 64px;
+    margin-bottom: 15px;
+}
+
+.p1 {
+    color: var(--gray-300);
+    font-weight: bold;
+}
+
+.p2 {
+    color: var(--gray-300);
+}
+
